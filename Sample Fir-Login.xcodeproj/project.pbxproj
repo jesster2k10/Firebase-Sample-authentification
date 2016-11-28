@@ -12,9 +12,12 @@
 		5FD8080D1DEC58ED00566D53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD8080B1DEC58ED00566D53 /* Main.storyboard */; };
 		5FD8080F1DEC58ED00566D53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FD8080E1DEC58ED00566D53 /* Assets.xcassets */; };
 		5FD808121DEC58EE00566D53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD808101DEC58EE00566D53 /* LaunchScreen.storyboard */; };
+		5FD8081A1DEC5D6D00566D53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FD808191DEC5D6D00566D53 /* GoogleService-Info.plist */; };
+		617965DB7205BE4F0408C573 /* Pods_Sample_Fir_Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2925A078E54FC0E1540DB19D /* Pods_Sample_Fir_Login.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2925A078E54FC0E1540DB19D /* Pods_Sample_Fir_Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample_Fir_Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD808041DEC58ED00566D53 /* Sample Fir-Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample Fir-Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD808071DEC58ED00566D53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FD808091DEC58ED00566D53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		5FD8080E1DEC58ED00566D53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FD808111DEC58EE00566D53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FD808131DEC58EE00566D53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FD808191DEC5D6D00566D53 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C614DED206DA9FA592143C90 /* Pods-Sample Fir-Login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample Fir-Login.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sample Fir-Login/Pods-Sample Fir-Login.release.xcconfig"; sourceTree = "<group>"; };
+		EB838A241341C0AC682FB099 /* Pods-Sample Fir-Login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample Fir-Login.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sample Fir-Login/Pods-Sample Fir-Login.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				617965DB7205BE4F0408C573 /* Pods_Sample_Fir_Login.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				5FD808061DEC58ED00566D53 /* Sample Fir-Login */,
 				5FD808051DEC58ED00566D53 /* Products */,
+				9B9A88B400F29C5F57EBE874 /* Pods */,
+				91DEC0821D8102D37059B4B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				5FD8080E1DEC58ED00566D53 /* Assets.xcassets */,
 				5FD808101DEC58EE00566D53 /* LaunchScreen.storyboard */,
 				5FD808131DEC58EE00566D53 /* Info.plist */,
+				5FD808191DEC5D6D00566D53 /* GoogleService-Info.plist */,
 			);
 			path = "Sample Fir-Login";
+			sourceTree = "<group>";
+		};
+		91DEC0821D8102D37059B4B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2925A078E54FC0E1540DB19D /* Pods_Sample_Fir_Login.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B9A88B400F29C5F57EBE874 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB838A241341C0AC682FB099 /* Pods-Sample Fir-Login.debug.xcconfig */,
+				C614DED206DA9FA592143C90 /* Pods-Sample Fir-Login.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FD808161DEC58EE00566D53 /* Build configuration list for PBXNativeTarget "Sample Fir-Login" */;
 			buildPhases = (
+				58D0359857596BFDF0933789 /* [CP] Check Pods Manifest.lock */,
 				5FD808001DEC58ED00566D53 /* Sources */,
 				5FD808011DEC58ED00566D53 /* Frameworks */,
 				5FD808021DEC58ED00566D53 /* Resources */,
+				6FB215BEC58AAE8C932E9137 /* [CP] Embed Pods Frameworks */,
+				A5277159D471DC55AD3CBADA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,11 +156,60 @@
 			files = (
 				5FD808121DEC58EE00566D53 /* LaunchScreen.storyboard in Resources */,
 				5FD8080F1DEC58ED00566D53 /* Assets.xcassets in Resources */,
+				5FD8081A1DEC5D6D00566D53 /* GoogleService-Info.plist in Resources */,
 				5FD8080D1DEC58ED00566D53 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58D0359857596BFDF0933789 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6FB215BEC58AAE8C932E9137 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sample Fir-Login/Pods-Sample Fir-Login-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5277159D471DC55AD3CBADA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sample Fir-Login/Pods-Sample Fir-Login-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5FD808001DEC58ED00566D53 /* Sources */ = {
@@ -257,12 +336,13 @@
 		};
 		5FD808171DEC58EE00566D53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB838A241341C0AC682FB099 /* Pods-Sample Fir-Login.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 964QFWYN42;
 				INFOPLIST_FILE = "Sample Fir-Login/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sampleproject.jesson.Sample-Fir-Login";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sampleproject.jesson;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -270,12 +350,13 @@
 		};
 		5FD808181DEC58EE00566D53 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C614DED206DA9FA592143C90 /* Pods-Sample Fir-Login.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 964QFWYN42;
 				INFOPLIST_FILE = "Sample Fir-Login/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sampleproject.jesson.Sample-Fir-Login";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sampleproject.jesson;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -300,6 +381,7 @@
 				5FD808181DEC58EE00566D53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
